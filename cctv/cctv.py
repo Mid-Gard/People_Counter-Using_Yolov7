@@ -14,7 +14,7 @@ faceCascade = cv2.CascadeClassifier(cascadePath);
 
 def create_camera (channel):
 #    rtsp = "rtsp://" + rtsp_username + ":" + rtsp_password + "@192.168.0.102:554/Streaming/channels/" + channel + "02" #change the IP to suit yours
-    rtsp = "rtsp://admin:Crl@12345@192.168.0.102:554/cam/realmonitor?channel=3&subtype=0"
+    rtsp = "rtsp://admin:Crl@12345@192.168.29.240:554/cam/realmonitor?channel=3&subtype=0"
     cap = cv2.VideoCapture()
     cap.open(rtsp)
     cap.set(3, 640)  # ID number for width is 3

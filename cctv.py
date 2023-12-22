@@ -7,7 +7,7 @@ height = 480
 cam_no = 1
 
 def create_camera(channel):
-    rtsp = "rtsp://admin:Crl@12345@192.168.0.102:554/cam/realmonitor?channel=5&subtype=0"
+    rtsp = "rtsp://admin:Crl@12345@192.168.29.240:554/cam/realmonitor?channel=1&subtype=0"
     cap = cv2.VideoCapture(rtsp)
     cap.set(3, width)  # Set width
     cap.set(4, height)  # Set height

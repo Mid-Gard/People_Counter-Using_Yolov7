@@ -1,7 +1,7 @@
 import torch
 import requests
-import ultralytics.models.yolo
-import ultralytics.utils
+#import ultralytics.models.yolo
+#import ultralytics.utils
 from PIL import Image
 import numpy as np
 from typing import Tuple, Dict
@@ -31,8 +31,9 @@ def get_frame_from_stream(url: str) -> np.ndarray:
         return None
 
 # Replace the STREAM_URL with the URL of the video stream
-STREAM_URL = "http://192.168.29.187:8080/shot.jpg"
+#STREAM_URL = "http://192.168.29.187:8080/shot.jpg"
 # STREAM_URL = "http://192.168.137.156:8080/video?type=some.mjpeg"
+STREAM_URL = "rtsp://admin:Crl@12345@192.168.29.240:554/cam/realmonitor?channel=1&subtype=0"
 
 # Initialize an empty list for box_multi_list
 box_multi_list = []

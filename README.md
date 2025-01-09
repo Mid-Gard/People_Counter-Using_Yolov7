@@ -10,23 +10,17 @@
 ## Steps to run Code
 - Clone the repository.
 
-- Goto the cloned folder: ``` cd yolov7 ```
+- Goto the cloned folder: ``` cd UsingYolov7 ```
 
-- Create a  envirnoment (Recommended, If you dont want to disturb python packages)
+- Create a conda environment, as I was getting problem with installing dlib package using normal python. Its easier to install using conda.
+  - Run following command : `conda create --name myenv python=3.8.18`
+  - Ensure the evironment is activated : `conda activate myenv`.
+  - Install all the packages in the environment : `pip install -r requirements.txt`.
 
-- Install all the packages :
-```
+- Give the IP address of the Camera in the `sources.txt` file.
+  - You can add more links on new line, but the video wont be displayed, only result in terminal.
 
-### For Linux Users
-python3 -m pip install -r requirements.txt
-
-### For Window Users
-python -m pip install -r requirements.txt
-```
-
-- Give the IP address of the Camera in the sources.txt file, keep adding the urls of the cameras on new line at a time.
-
-- Run the project: ``` python detect.py ```
+- Run the project: ``` python yolov7/detect.py ```
 
 
 ## TODO

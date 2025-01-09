@@ -1,5 +1,7 @@
 # People Counter Using ML
 
+> This branch contains the code using original model and not the openvino model.
+
 ## Features
 - Added Label for Every Track
 - Code can run on Both (CPU & GPU)

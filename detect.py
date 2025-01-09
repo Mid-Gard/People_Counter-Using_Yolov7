@@ -36,10 +36,10 @@ def detect(save_img=False):
     exist_ok = True
     trace = 0
     project = 'Output'
-    classes = [ 0,1,3,14,15,16,18,19,21]            # filter by class: --class 0, or --class 0 2 3
+    classes = [0,1,2,3,7,14,15,16,17,18,19,20,21,22,23,25,56]            # filter by class: --class 0, or --class 0 2 3
     # agnostic-nms = True
     # save_img = not opt.nosave and not source.endswith('.txt')  # save inference images, That is basically if you are storing all teh Ip webcame in the soruces.txt then since all are not of same resolution, it makes the save_img flag False so it dont save the footage.
-    # save_img = True # Okay so the problem is if you are using multiple cameras of defferent resolution, then it creates a video, but it doest have the higer reso camera frames.
+    save_img = True # Okay so the problem is if you are using multiple cameras of defferent resolution, then it creates a video, but it doest have the higer reso camera frames.
     save_txt = True
     webcam = source.isnumeric() or source.endswith('.txt') or source.lower().startswith(
         ('rtsp://', 'rtmp://', 'http://', 'https://'))
